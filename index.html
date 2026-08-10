@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibam Singh Gouria | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Shibam Singh Gouria - Football, Travel, Leadership, and Life.">
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Global Fixed Background -->
+    <div class="global-bg-wrapper">
+        <img src="assets/images/background/wp9040434.webp" alt="Background Image" class="global-bg-image">
+        <div class="global-bg-overlay"></div>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-text">SSG</h1>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">SSG.</a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#football" class="nav-link">Football</a>
+                <a href="#travel" class="nav-link">Travel</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-links">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#football" class="mobile-nav-link">Football</a>
+            <a href="#travel" class="mobile-nav-link">Travel</a>
+            <a href="#gallery" class="mobile-nav-link">Gallery</a>
+            <a href="#resume" class="mobile-nav-link">Resume</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <header id="hero">
+            <div class="particles" id="particles"></div>
+            <div class="hero-content">
+                <div class="hero-text-wrapper reveal-text">
+                    <h2 class="hero-greeting">Hi, I am</h2>
+                    <h1 class="hero-title">Shibam Singh Gouria</h1>
+                    <p class="hero-subtitle">Football • Travel • Leadership • Life</p>
+                </div>
+                <div class="hero-actions reveal-fade-up">
+                    <a href="#football" class="btn btn-primary magnetic-btn">Explore My Journey</a>
+                    <a href="#gallery" class="btn btn-secondary magnetic-btn">View Gallery</a>
+                    <a href="assets/Shibam-Singh-Gouria-Resume.pdf" download class="btn btn-outline magnetic-btn">Download Resume</a>
+                </div>
+                <div class="hero-socials reveal-fade-up delay-2">
+                    <!-- Social icons will be hydrated by JS -->
+                    <a href="#" id="social-ig" class="social-icon" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" id="social-li" class="social-icon" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" id="social-tg" class="social-icon" target="_blank" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll</p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Who is Shibam?</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-image-wrapper scroll-reveal-left">
+                        <div class="about-image-glow"></div>
+                        <!-- Profile Image -->
+                        <img src="assets/images/dp.jpg" alt="Shibam Singh Gouria" class="about-image" onerror="this.src='https://via.placeholder.com/600x800/101827/4F46E5?text=Shibam+Profile'">
+                    </div>
+                    
+                    <div class="about-content scroll-reveal-right">
+                        <p class="about-text lead">
+                            I am a disciplined, adaptable, and people-oriented individual with a strong foundation in sports and leadership.
+                        </p>
+                        <p class="about-text">
+                            My journey has been defined by my passion for football, my commitment to physical fitness, and my dedication to team success. I thrive in environments that require resilience, problem-solving, and effective communication.
+                        </p>
+                        
+                        <div class="traits-grid">
+                            <div class="trait-card">
+                                <h3>Leadership</h3>
+                                <p>Guiding teams with calm authority.</p>
+                            </div>
+                            <div class="trait-card">
+                                <h3>Adaptability</h3>
+                                <p>Embracing change and new challenges.</p>
+                            </div>
+                            <div class="trait-card">
+                                <h3>Resilience</h3>
+                                <p>Bouncing back stronger from setbacks.</p>
+                            </div>
+                            <div class="trait-card">
+                                <h3>Teamwork</h3>
+                                <p>Fostering collaboration and unity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Profile Section -->
+        <section id="profile" class="section bg-darker">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Personal Profile</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="profile-cards scroll-reveal-stagger">
+                    <div class="profile-card">
+                        <span class="profile-label">Name</span>
+                        <span class="profile-value">Shibam Singh Gouria</span>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-label">Date of Birth</span>
+                        <span class="profile-value">06 February 2002</span>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-label">Nationality</span>
+                        <span class="profile-value">Indian</span>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-label">Height</span>
+                        <span class="profile-value">178 cm</span>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-label">Languages</span>
+                        <span class="profile-value">English (Fluent), Hindi (Native)</span>
+                    </div>
+                    <div class="profile-card">
+                        <span class="profile-label">Passport</span>
+                        <span class="profile-value">Available</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Football Section -->
+        <section id="football" class="section football-section">
+            <div class="football-bg"></div>
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <h2 class="section-title">The Beautiful Game</h2>
+                    <p class="section-subtitle">My journey in Football</p>
+                    <div class="section-line center"></div>
+                </div>
+
+                <div class="football-features">
+                    <!-- Player/Participant -->
+                    <div class="football-card scroll-reveal-up">
+                        <div class="fc-icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 16 8 22 9 17 14 19 21 12 17 5 21 7 14 2 9 8 8 12 2"></polygon></svg>
+                        </div>
+                        <h3>National Level Participant</h3>
+                        <p>Represented institution at national competitions, demonstrating high-level athletic performance and discipline.</p>
+                    </div>
+
+                    <!-- Coach -->
+                    <div class="football-card scroll-reveal-up delay-1">
+                        <div class="fc-icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3>Football Coach (3 Years)</h3>
+                        <p>Developed structured training programmes for junior players, focusing on skill development, team communication, and sportsmanship.</p>
+                    </div>
+
+                    <!-- Referee -->
+                    <div class="football-card scroll-reveal-up delay-2">
+                        <div class="fc-icon">
+                            <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <h3>Licensed Referee</h3>
+                        <p>Officiated competitive matches, requiring calm authority, rapid decision-making, and deep knowledge of the game.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="section bg-darker">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Leadership & Achievements</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Team Captain</h3>
+                            <p>Served as team captain across multiple inter-college competitions, leading by example and fostering team unity.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Event Leadership</h3>
+                            <p>Managed and coordinated groups of 20+ participants for various sports and community events.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>NSS Camps & Workshops</h3>
+                            <p>Volunteered in national service programmes and community outreach drives.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Team Leadership Programmes</h3>
+                            <p>Participated in structured workshops involving group dynamics, peer mentoring and collaborative problem solving.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item scroll-reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Community Engagement</h3>
+                            <p>Participated in civic drives promoting health awareness and social welfare.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Section -->
+        <section id="travel" class="section travel-section">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <h2 class="section-title">Exploring the World</h2>
+                    <p class="section-subtitle">Travel and Lifestyle</p>
+                    <div class="section-line center"></div>
+                </div>
+
+                <div class="travel-grid" id="travel-grid">
+                    <!-- Populated by JS config -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section bg-darker">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Visual Journey</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="gallery-filters scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="football">Football</button>
+                    <button class="filter-btn" data-filter="travel">Travel</button>
+                    <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+                </div>
+
+                <div class="masonry-gallery" id="masonry-gallery">
+                    <!-- Images hydrated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <img src="" alt="Fullscreen image" class="lightbox-img">
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+            <div class="lightbox-caption"></div>
+        </div>
+
+        <!-- Resume & Experience Section -->
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="resume-grid">
+                    <!-- Experience -->
+                    <div class="resume-col">
+                        <div class="section-header scroll-reveal">
+                            <h2 class="section-title">Experience</h2>
+                            <div class="section-line"></div>
+                        </div>
+                        
+                        <div class="experience-card scroll-reveal-up">
+                            <div class="exp-date">January 2024 – April 2026</div>
+                            <h3 class="exp-title">Store Keeper</h3>
+                            <h4 class="exp-company">G Town wine shop</h4>
+                            <ul class="exp-duties">
+                                <li>Received, issued and maintained inventory records.</li>
+                                <li>Monitored stock levels and performed regular inventory checks.</li>
+                                <li>Reported damaged, missing or low stock.</li>
+                                <li>Kept the store organized.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="resume-col">
+                        <div class="section-header scroll-reveal">
+                            <h2 class="section-title">Education</h2>
+                            <div class="section-line"></div>
+                        </div>
+
+                        <div class="timeline-container small">
+                            <div class="timeline-item scroll-reveal-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content edu-card">
+                                    <div class="edu-year">2022</div>
+                                    <h3>B.Sc. (PCM)</h3>
+                                    <p>GGM Science College, Cluster University of Jammu</p>
+                                    <span class="edu-score">67.6%</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item scroll-reveal-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content edu-card">
+                                    <div class="edu-year">2019</div>
+                                    <h3>Class XII — CBSE</h3>
+                                    <p>Sainik School Nagrota, Jammu</p>
+                                    <span class="edu-score">62.6%</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item scroll-reveal-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content edu-card">
+                                    <div class="edu-year">2017</div>
+                                    <h3>Class X — CBSE</h3>
+                                    <p>Sainik School Nagrota, Jammu</p>
+                                    <span class="edu-score">78.0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-section mt-5">
+                    <div class="section-header text-center scroll-reveal">
+                        <h2 class="section-title">Skills Overview</h2>
+                        <div class="section-line center"></div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill-category scroll-reveal-up">
+                            <h3>Core Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Excellent Communication</span>
+                                <span class="skill-tag">Customer Service Orientation</span>
+                                <span class="skill-tag">Leadership & Teamwork</span>
+                                <span class="skill-tag">Adaptability & Resilience</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Time Management</span>
+                                <span class="skill-tag">Positive Attitude</span>
+                                <span class="skill-tag">Interpersonal Skills</span>
+                                <span class="skill-tag">Physical Fitness</span>
+                            </div>
+                        </div>
+                        <div class="skill-category scroll-reveal-up delay-1">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-tags alt">
+                                <span class="skill-tag">MS Office (Excel, Word, PowerPoint)</span>
+                                <span class="skill-tag">Internet & Email Handling</span>
+                                <span class="skill-tag">Documentation & Record Management</span>
+                                <span class="skill-tag">Computer Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-darker">
+            <div class="container">
+                <div class="section-header text-center scroll-reveal">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Get in touch for opportunities or collaborations</p>
+                    <div class="section-line center"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info scroll-reveal-left">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:shibam.gouria@example.com" id="contact-email">shibam.gouria@example.com</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+910000000000" id="contact-phone">+91 000 000 0000</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper scroll-reveal-right">
+                        <!-- 
+                          To make this form functional without a backend:
+                          1. Create a free account at formspree.io or emailjs.com
+                          2. Replace the 'action' URL below with your endpoint
+                        -->
+                        <form id="contact-form" class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Form validation successful! Connect a backend service like Formspree to send messages.');">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder="Subject">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block magnetic-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>SSG.</h2>
+                    <p>Football • Travel • Life</p>
+                </div>
+                <div class="footer-socials">
+                    <!-- Hydrated by JS -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Shibam Singh Gouria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
