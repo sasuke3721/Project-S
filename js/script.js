@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initGallery();
     initNavbarScroll();
     initMagneticButtons();
+    initDynamicBackgrounds();
     
     // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -519,4 +520,52 @@ function initMagneticButtons() {
             btn.style.transform = 'translate(0px, 0px)';
         });
     });
+}
+
+/* ==========================================================================
+   Dynamic Backgrounds
+   ========================================================================== */
+function initDynamicBackgrounds() {
+    const sections = document.querySelectorAll('section, header#hero');
+    const bgVideos = document.querySelectorAll('.bg-video');
+
+    if (bgVideos.length === 0) return;
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3 // Trigger when 30% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const currentSectionId = entry.target.id;
+                
+                // Map sections to their respective background videos
+                let targetBg = 'hero'; // default
+                
+                if (currentSectionId === 'football') {
+                    targetBg = 'football';
+                } else if (currentSectionId === 'resume' || currentSectionId === 'about') {
+                    targetBg = 'resume';
+                } else if (currentSectionId === 'hero') {
+                    targetBg = 'hero';
+                }
+
+                // If no specific video is defined for the section, keep the last one or revert to hero
+                // For this implementation, we map it directly if found, otherwise keep current
+
+                bgVideos.forEach(vid => {
+                    if (vid.getAttribute('data-section') === targetBg) {
+                        vid.classList.add('active');
+                    } else {
+                        vid.classList.remove('active');
+                    }
+                });
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(sec => observer.observe(sec));
 }
