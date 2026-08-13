@@ -64,7 +64,10 @@
         { src: "assets/images/lifestyle/IMG_20220624_105122_288.jpg", category: "lifestyle", alt: "Lifestyle Experience" },
         { src: "assets/images/lifestyle/IMG_8162.jpg", category: "lifestyle", alt: "Lifestyle Capture" },
         { src: "assets/images/football/WhatsApp Image 2026-08-13 at 4.56.18 PM.jpeg", category: "football", alt: "Football Moments" },
-        { src: "assets/images/travel/WhatsApp Image 2026-08-13 at 4.50.24 PM.jpeg", category: "travel", alt: "Travel Adventures" }
+        { src: "assets/images/travel/WhatsApp Image 2026-08-13 at 4.50.24 PM.jpeg", category: "travel", alt: "Travel Adventures" },
+        { src: "assets/images/football/IMG-20251221-WA0000.jpg", category: "football", alt: "Football Journey" },
+        { src: "assets/images/football/IMG-20251221-WA0001.jpg", category: "football", alt: "Football Journey" },
+        { src: "assets/images/lifestyle/IMG_20260517_212328.jpg", category: "lifestyle", alt: "Lifestyle Vibes" }
     ]
 };
 
