@@ -35,11 +35,36 @@
             image: "assets/images/travel/travel-03.jpg"
         }
     ],
+    foodItems: [
+        {
+            location: "Local Delicacies",
+            desc: "Exploring street food and authentic local dishes.",
+            image: "assets/food/food-01.jpg"
+        },
+        {
+            location: "Homemade Comfort",
+            desc: "Trying out new recipes and homemade comfort food.",
+            image: "assets/food/food-02.jpg"
+        },
+        {
+            location: "Fine Dining",
+            desc: "Experiencing unique culinary arts and desserts.",
+            image: "assets/food/food-03.jpg"
+        }
+    ],
     gallery: [
         { src: "assets/images/football/football-01.jpg", category: "football", alt: "National Level Football" },
         { src: "assets/images/football/football-02.jpg", category: "football", alt: "Football Coaching" },
         { src: "assets/images/travel/travel-01.jpg", category: "travel", alt: "Travel Memories" },
-        { src: "assets/images/dp.jpg", category: "professional", alt: "Professional Portrait" }
+        { src: "assets/images/dp.jpg", category: "professional", alt: "Professional Portrait" },
+        { src: "assets/food/food-01.jpg", category: "food", alt: "Local Delicacies" },
+        { src: "assets/food/food-02.jpg", category: "food", alt: "Homemade Comfort" },
+        { src: "assets/food/food-03.jpg", category: "food", alt: "Fine Dining" },
+        { src: "assets/images/lifestyle/IMG_20210206_212911-03.jpg", category: "lifestyle", alt: "Lifestyle Moment" },
+        { src: "assets/images/lifestyle/IMG_20220624_105122_288.jpg", category: "lifestyle", alt: "Lifestyle Experience" },
+        { src: "assets/images/lifestyle/IMG_8162.jpg", category: "lifestyle", alt: "Lifestyle Capture" },
+        { src: "assets/images/football/WhatsApp Image 2026-08-13 at 4.56.18 PM.jpeg", category: "football", alt: "Football Moments" },
+        { src: "assets/images/travel/WhatsApp Image 2026-08-13 at 4.50.24 PM.jpeg", category: "travel", alt: "Travel Adventures" }
     ]
 };
 
@@ -53,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initMobileMenu();
     initTravelSection();
+    initFoodSection();
     initGallery();
     initNavbarScroll();
     initMagneticButtons();
@@ -314,6 +340,30 @@ function initTravelSection() {
 
     let html = '';
     PORTFOLIO_CONFIG.travelDestinations.forEach((dest, index) => {
+        const delayClass = index > 0 ? `delay-${index}` : '';
+        html += `
+            <div class="travel-card scroll-reveal-up ${delayClass}">
+                <img src="${dest.image}" alt="${dest.location}" class="travel-img" onerror="this.src='https://via.placeholder.com/600x800/1e293b/3b82f6?text=${encodeURIComponent(dest.location)}'">
+                <div class="travel-overlay">
+                    <h3 class="travel-location">${dest.location}</h3>
+                    <p class="travel-desc">${dest.desc}</p>
+                </div>
+            </div>
+        `;
+    });
+
+    grid.innerHTML = html;
+}
+
+/* ==========================================================================
+   Food Section Setup
+   ========================================================================== */
+function initFoodSection() {
+    const grid = document.getElementById('food-grid');
+    if (!grid) return;
+
+    let html = '';
+    PORTFOLIO_CONFIG.foodItems.forEach((dest, index) => {
         const delayClass = index > 0 ? `delay-${index}` : '';
         html += `
             <div class="travel-card scroll-reveal-up ${delayClass}">
