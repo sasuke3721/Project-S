@@ -9,7 +9,7 @@
    const PORTFOLIO_CONFIG = {
     personal: {
         name: "Shibam Singh Gouria",
-        email: "shibam.gouria@example.com", // Replace with real email
+        email: "shibamsinghgouria@gmail.com",
         phone: "+91 000 000 0000",          // Replace with real phone
         resumePath: "assets/Shibam-Singh-Gouria-Resume.pdf"
     },
